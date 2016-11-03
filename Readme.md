@@ -12,6 +12,7 @@ To build copy all the files to the build directory.
 Copy icudtl.dat to the build directory. (you can find it in the vscode downloads, ex for linux).
 
 >chmod 755 vscode_build.sh
+
 >./vscode_build.sh
 
 VSCODE should not be built as root, or npm will fail.
