@@ -19,10 +19,17 @@ VSCODE should not be built as root, or npm will fail.
 
 
 21/06/2017:
+
 Binaries for VSCODE 1.10, VSCODE 1.7, ELECTRON 1.3.7, LIBCHROMIUM 52.0.2743.116
+
 Compiled with ICU 58.
 
-> setenv LD_LIBRARY_PATH <VSCODE FOLDER LOCATION>
+TO RUN VSCODE :
+> setenv LD_LIBRARY_PATH \[VSCODE FOLDER LOCATION\] 
+
 (example for tcsh > setenv LD_LIBRARY_PATH /usr/home/xyz/VSCode-freebsd-x64/)
+
 (example for bash > export LD_LIBRARY_PATH=/usr/home/xyz/VSCode-freebsd-x64/)
+
 > ./code-oss
+
