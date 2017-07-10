@@ -30,7 +30,7 @@ TO RUN VSCODE :
 **Microsoft C/C++ and C# extensions**  
 This extentions only work with v1.10 and require  linux compatiblity layer (for c extention) and Mono installed.   
 The centos library *linux_base-f7* in FreeBSD port does not work (but needs to be installed) with the extensions.  
-*vcode_ext_linux_debian8.tar.gz* contains the required linux libraries from debian 8.    
+**vcode_ext_linux_debian8.tar.gz** contains the required linux libraries from debian 8.    
 Extract this to /compact/linux/usr/.  
 Extract the extenions **vscode_C_CS_extention.tar.gz** to ~/.vscode/extentions/.   
 Load linux compatibility module
