@@ -61,6 +61,10 @@ tar -xvf ../nsfw_stub.tar.gz -C build/lib/watch/node_modules/
 #node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js rebuild
 #cd ../../../../../
 scripts/npm.sh install --arch=x64
+#git clone https://github.com/roblourens/ripgrep.git
+#git checkout 0.5.1-patch.0
+#cd ripgrep; cargo build --release
+#./target/release/rg
 mkdir node_modules/vscode-ripgrep/bin
 cp ../rg node_modules/vscode-ripgrep/bin/.
 ./node_modules/.bin/gulp compile
