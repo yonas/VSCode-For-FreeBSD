@@ -15,7 +15,7 @@ Needs atleast 8gb stotage space. On a i7 Toshiba with 16gb RAM takes 6 hrs to bu
 **Building**
 >chmod 755 vscode_build.sh
 
->./vscode_build.sh
+>./vscode_buildv1.sh
 
 VSCODE should not be built as root, or npm will fail.
 
