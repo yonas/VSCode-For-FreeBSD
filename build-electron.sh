@@ -7,6 +7,7 @@ set -x
 svnlite co -r442282 svn://svn.freebsd.org/ports/head/www/chromium chromium
 cd chromium
 rm files/patch-gpu_command__buffer_service_program__manager.cc files/patch-gpu_config_gpu__control__list.cc files/patch-third__party_leveldatabase_env__chromium.cc
+patch -p1  --ignore-whitespace < ../chromium-Makefile.diff
 make configure DISABLE_VULNERABILITIES=yes
 cd ..
 git clone https://github.com/electron/libchromiumcontent.git
