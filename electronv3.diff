@@ -810,7 +810,7 @@ index 1c5f8a7..a733b2e 100644
 +          '-isystem/usr/local/include/ -fPIC',
 +        ],
 +        'cflags_cc': [
-+          ' -I/usr/local/include -D_LIBCPP_TRIVIAL_PAIR_COPY_CTOR=1 -fno-rtti  -pthread -std=c++11 -fPIC',
++          ' -I/usr/local/include -fno-rtti  -pthread -std=c++11 -fPIC',
          ],
          'xcode_settings': {
            'CC': '<(make_clang_dir)/bin/clang',
