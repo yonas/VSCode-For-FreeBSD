@@ -104,3 +104,17 @@ diff -ru a/ui/base/BUILD.gn b/ui/base/BUILD.gn
    if (is_win) {
      data_deps = [
        ":copy_compiler_dll" 
+--- Makefile   2017-12-05 00:12:27.457897000 -0500
++++ Makefile   2017-12-05 00:12:57.609017000 -0500
+@@ -200,11 +200,6 @@
+ # TODO: move this big extra to small ones
+ EXTRA_PATCHES+=        ${FILESDIR}/extra-patch-clang
+
+-# Work around base r261801
+-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100508
+-GN_ARGS+=      extra_cxxflags="-D_LIBCPP_TRIVIAL_PAIR_COPY_CTOR=1"
+-.endif
+-
+ pre-everything::
+        @${ECHO_MSG}
+        @${ECHO_MSG} "To build Chromium, you should have around 2GB of memory,"
